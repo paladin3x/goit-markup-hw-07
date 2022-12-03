@@ -4,11 +4,25 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: var(--color-white);
-}
 
-.personal-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: auto;
-  padding-right: auto;
+  &__img {
+    display: block;
+  }
+
+  &__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  &__card p {
+    margin-top: 10px;
+    color: var(--general-gray-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }

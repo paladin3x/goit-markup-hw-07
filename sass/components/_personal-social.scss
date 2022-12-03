@@ -1,4 +1,10 @@
-.personal-social a {
+.personal__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  fill: #afb1b8;
+}
+.personal__social a {
   display: block;
   border-radius: 50%;
   border-color: transparent;
@@ -7,22 +13,18 @@
   height: 44px;
   padding: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+    fill: var(--color-white);
+  }
 }
-.personal-social a:hover,
-.personal-social a:focus {
-  background-color: var(--color-blue);
-  fill: var(--color-white);
-}
-.personal-social {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-  fill: #afb1b8;
-}
-.personal-social li:not(:last-child) {
+
+.personal__social li:not(:last-child) {
   margin-right: 10px;
 }
 
-.personal-social svg {
+.personal__social svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

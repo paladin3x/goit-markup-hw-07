@@ -23,13 +23,13 @@
 
   <body>
     <header class="hat">
-      <div class="container hat-flex">
-        <nav class="hat-navi">
-          <a href="./" class="hat-logo">
-            <span class="firstlogo">Web</span
-            ><span class="secondlogo">Studio</span>
+      <div class="container hat__flex">
+        <nav class="hat__navi">
+          <a href="./" class="hat__logo">
+            <span class="hat__logofirst">Web</span
+            ><span class="hat__logosecond">Studio</span>
           </a>
-          <ul class="hat-link reset">
+          <ul class="hat__list reset">
             <li>
               <a href="./index.html" class="blue-line line-anim">Студія</a>
             </li>
@@ -45,17 +45,32 @@
             </li>
           </ul>
         </nav>
-        <ul class="hat-contact reset">
+        <ul class="hat__contact reset">
           <li>
             <a
               href="mailto:info@devstudio.com"
               target="_blank"
               rel="noopener norefferer nofollow"
-              >info@devstudio.com</a
+              class="mailto"
+              ><svg
+                class="icon-envelope hat__contacticon"
+                style="width: 16; height: 12"
+              >
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="tell" href="tel:+380961111111"
+              ><svg
+                class="icon-smartphone hat__contacticon"
+                style="width: 16; height: 12"
+              >
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -64,7 +79,7 @@
     <main></main>
 
     <footer class="section-footer">
-      <div class="container footer-box">
+      <div class="container section-footer__box">
         <div class="footer-address">
           <a href="./" class="logofooter">
             <span class="thirdlogo">Web</span
@@ -73,22 +88,24 @@
           <address class="footaddress">
             <a
               href="https://goo.gl/maps/dP5WaD3w5aMma61z8"
-              class="maps"
+              class="footaddress__maps"
               target="_blank"
               rel="nofollow noopener norefferer"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
             <a
               href="mailto:info@devstudio.com"
-              class="cont email"
+              class="cont footaddress__email"
               rel="nofollow noopener norefferer"
               >info@devstudio.com</a
             >
-            <a href="tel:+380961111111" class="cont tel">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="cont footaddress__tel"
+              >+38 096 111 11 11</a
+            >
           </address>
         </div>
-        <div class="connect-social">
-          <p class="connect-phrase">приєднуйтесь</p>
+        <div class="connect">
+          <p class="connect__phrase">приєднуйтесь</p>
           <ul class="icon-soc-box">
             <li class="icon-social">
               <a class="icon-position" href="https://www.instagram.com/">

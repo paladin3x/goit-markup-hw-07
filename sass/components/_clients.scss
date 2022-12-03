@@ -1,4 +1,12 @@
-.brand-link {
+.brand {
+  &__logo {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    fill: #afb1b8;
+  }
+}
+
+.brand__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,43 +15,37 @@
   border-radius: 4px;
   border: 1px solid #afb1b8;
   color: #afb1b8;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+    .brand__logo {
+      fill: var(--color-blue);
+    }
+  }
 }
-.brand-link:hover,
-.brand-link:focus {
-  border-color: var(--color-blue);
-  color: var(--color-blue);
-}
-.brand-link:hover .brand-logo,
-.brand-link:focus .brand-logo {
-  fill: var(--color-blue);
-}
-.brand-logo {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
-  fill: currentColor;
-}
+
 .clients {
   background-color: var(--color-white);
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.clients-phrase {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
 
-  color: var(--second-black-text);
-}
-.clients ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-}
+  &__phrase {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 
-.clients svg {
-  fill: #afb1b8;
+    color: var(--second-black-text);
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
